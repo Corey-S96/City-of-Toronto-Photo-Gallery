@@ -1,0 +1,178 @@
+html {
+    margin-left: 25px;
+    background-color: #d5d5d5;
+}
+
+.grid-container {
+  margin-right: auto;
+  margin-left:  auto; 
+  max-width: 1100px;
+  padding-right: 10px;
+  padding-left:  10px;
+
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.2fr 0.68fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "item-1 item-2 item-3"
+      "item-4 item-2 item-6"
+      "item-4 item-5 item-6";
+  }
+
+  /* Grid specific "item-# classes dont edit for styling properties,
+  styling properties for .Overlay start on line 110 */
+
+  .item-2 { grid-area: item-1; }
+  .item-1 { grid-area: item-2; }
+  .item-3 { grid-area: item-3; }
+  .item-4 { grid-area: item-4; }
+  .item-5 { grid-area: item-5; }
+  .item-6 { grid-area: item-6; }
+
+  #heroText,
+  .detailText {
+    margin-right: auto; 
+    margin-left:  auto;
+    max-width: 1100px;
+    padding-right: 10px; 
+    padding-left:  10px; 
+  }
+
+  .detailText {
+    font-size: 39px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(73, 72, 72);
+  }
+
+  #heroText {
+      font-size: 55px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: normal;
+  }
+
+  #heroTextBold {
+    font-weight: 950;
+  }
+
+  #detailTextBold {
+    font-weight: 950;
+  }
+
+  footer {
+  margin-right: auto;
+  margin-left:  auto; 
+  max-width: 1100px;
+  padding-right: 10px;
+  padding-left:  10px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  }
+
+  .footerIcon {
+    font-size: 33px;
+  }
+
+  a:visited { text-decoration: none; color: rgb(0, 0, 0); }
+  a:hover { text-decoration: none; color:rgb(255, 0, 0); }
+  a:focus { text-decoration: none; color:rgb(0, 0, 0); }
+  a:active { text-decoration: none; color:rgb(255, 0, 0); }
+
+
+/* Overlay Code Start */
+
+.overlay {
+  /* Overlay Box Position */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 50%);
+  
+  /* Text Transition and style properties for Overlay */          
+  color: #f1f1f1;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: rgb(0, 0, 0);
+  font-size: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  text-align: left;
+}
+
+.item-1:hover .overlay {
+  opacity: 1;
+}
+
+.item-2:hover .overlay {
+  opacity: 1;
+}
+
+.item-3:hover .overlay {
+  opacity: 1;
+}
+
+.item-4:hover .overlay {
+  opacity: 1;
+}
+
+.item-5:hover .overlay {
+  opacity: 1;
+}
+
+.item-6:hover .overlay {
+  opacity: 1;
+}
+
+
+.item-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.item-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.item-3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.item-4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.item-5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.item-6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Overlay Code End */
